@@ -29,11 +29,35 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     }
 
+    private fun isValid(): Boolean{
+        return(
+                binding.editDistance.text.toString() !=""
+                && binding.editPrice.text.toString() !=""
+                && binding.editAuto.text.toString() !=""
+                && binding.editAuto.text.toString().toFloat() !=0f
+                )
+    }
+
     private fun calculate(){
-        Toast.makeText(this, "Click!", Toast.LENGTH_SHORT).show()
+
+        if (isValid()){
+
+            val distance = binding.editDistance.text.toString().toFloat()
+            val price = binding.editPrice.text.toString().toFloat()
+            val autonomy = binding.editAuto.text.toString().toFloat()
+
+            val totalValue = (distance * price)/autonomy
+            val totalStrValue = "R$ ${"%.2f".format(totalValue)}"
+
+            binding.viewResult.text = totalStrValue
+
+        } else{
+            Toast.makeText(this,R.string.fill_all_fields , Toast.LENGTH_SHORT).show()
+        }
     }
 
     override fun onClick(v: View) {
+
         if (v.id == R.id.button_calculate){
             calculate()
         }
