@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">MyApplication</string>
     <string name="text">text</string>
-    <string name="dist_ncia">Distância</string>
+    <string name="distance">Distância</string>
     <string name="t_km">Total de quilometros</string>
-    <string name="pre_o">Preço</string>
-    <string name="p_litro">Preço por litro</string>
-    <string name="autonomia">Autonomia</string>
-    <string name="km_por_litro">Km por litro</string>
-    <string name="gasto_tota">SEU GASTO TOTAL SERÁ DE:</string>
-    <string name="r_0">R$ 0</string>
-    <string name="calcular">Calcular</string>
+    <string name="price">Preço</string>
+    <string name="price_l">Preço por litro</string>
+    <string name="autonomy">Autonomia</string>
+    <string name="km_p_l">Km por litro</string>
+    <string name="spend_value">SEU GASTO TOTAL SERÁ DE:</string>
+    <string name="value">R$ 0</string>
+    <string name="calculate">Calcular</string>
 </resources>
